@@ -1,15 +1,11 @@
 /*3. Crear un programa que determine si un número introducido en un Prompt es par o no, 
 la respuesta será mostrada en un Alert.*/
 
-let numeroCrudo = prompt('Dame un número')
-numero = Number(numeroCrudo)
+let numero = +prompt('Dame un número')
 
-while(isNaN(numero)){
-    numeroCrudo = prompt('Eso no es un número. Dame un número')
-    numero = Number(numeroCrudo)
-}
+while(isNaN(calificación))
+    calificación = +prompt('Eso no es un número. Dame un número')
 
-if (numero % 2 == 0)
-    alert(`El número ${numero} es par`)
-else
-    alert(`El número ${numero} es non (impar) o decimal`)
+let result = (calificación % 2 == 0) ? `El número ${calificación} es par` : `El número ${calificación} es non (impar) o decimal`
+
+alert(result)

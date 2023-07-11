@@ -1,13 +1,13 @@
 /* 5. Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.*/
-let numeroCrudo = prompt('Dame el número de cliente')
-numero = Number(numeroCrudo)
+let smallest = +prompt('Dame el primer número')
+while(isNaN(smallest))
+    smallest = +prompt('Eso no es un número. Dame el primer número')
 
-while(isNaN(numero)){
-    numeroCrudo = prompt('Eso no es un número de cliente. Dame un número de cliente')
-    numero = Number(numeroCrudo)
-}
+let numero2 = +prompt('Dame el segundo número')
+while(isNaN(numero2))
+    numero2 = +prompt('Eso no es un número. Dame el segundo número')
 
-if (numero == 1_000)
-    console.log('¡Ganaste el premio!')
-else
-    console.log('Lo sentimos, sigue participando')
+if (numero2 < smallest)
+    smallest = numero2
+
+console.log(`El número ${smallest} es el menor de los dos`)
