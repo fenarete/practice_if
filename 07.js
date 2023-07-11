@@ -1,7 +1,7 @@
 /*7. Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.*/
 
-let daysOfWeek = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo']
-let day = prompt('Dame un día de la semana').trim().toLowerCase()
+const daysOfWeek = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo']
+const day = prompt('Dame un día de la semana').trim().toLowerCase()
 let message = ''
 
 if (daysOfWeek.indexOf(day) == 0)

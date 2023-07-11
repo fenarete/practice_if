@@ -4,14 +4,14 @@ let biggest = +prompt('Dame el primer número')
 while(isNaN(biggest))
     biggest = +prompt('Eso no es un número. Dame el primer número')
 
-let numero2 = +prompt('Dame el segundo número')
+const numero2 = +prompt('Dame el segundo número')
 while(isNaN(numero2))
     numero2 = +prompt('Eso no es un número. Dame el segundo número')
 
 if (numero2 >= biggest)
     biggest = numero2 
 
-let numero3 = +prompt('Dame el tercer número')
+const numero3 = +prompt('Dame el tercer número')
 while(isNaN(numero3))
     numero3 = +prompt('Eso no es un número. Dame el segundo número')
 

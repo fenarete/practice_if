@@ -3,7 +3,7 @@ let smallest = +prompt('Dame el primer número')
 while(isNaN(smallest))
     smallest = +prompt('Eso no es un número. Dame el primer número')
 
-let numero2 = +prompt('Dame el segundo número')
+const numero2 = +prompt('Dame el segundo número')
 while(isNaN(numero2))
     numero2 = +prompt('Eso no es un número. Dame el segundo número')
 
